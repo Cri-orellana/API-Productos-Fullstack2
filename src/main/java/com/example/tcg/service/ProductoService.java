@@ -29,6 +29,21 @@ public class ProductoService {
     public void deleteProducto(Long id) {
         productoRepository.deleteById(id);
     }
+    public Producto updateProducto(Long id, Producto producto) {
+        Producto existingProducto = productoRepository.findById(id).orElse(null);
+        if (existingProducto != null) {
+            existingProducto.setFranquicia(producto.getFranquicia());
+            existingProducto.setTipo(producto.getTipo());
+            existingProducto.setNombreProduto(producto.getNombreProduto());
+            existingProducto.setPrecio(producto.getPrecio());
+            existingProducto.setDescripcion(producto.getDescripcion());
+            existingProducto.setUrlImagen(producto.getUrlImagen());
+            return productoRepository.save(existingProducto);
+        }
+        return null;
+    }
+    
+    
 
 
 }
