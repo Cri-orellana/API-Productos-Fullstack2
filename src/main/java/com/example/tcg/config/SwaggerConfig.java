@@ -14,8 +14,8 @@ public class SwaggerConfig {
     public OpenAPI api() {
             return new OpenAPI()
                 .info(new Info()
-                    .title("TCG-Project")
+                    .title("TCG-Project-API-Productos")
                     .version("1.0")
-                    .description("Nuestra pagina de cartitas"));
+                    .description("Swagger API para la gestión de productos de tienda tcg."));
     }
 }
