@@ -1,0 +1,8 @@
+com\example\tcg\config\CorsConfig.class
+com\example\tcg\repository\ProductoRepository.class
+com\example\tcg\controller\ProductoController.class
+com\example\tcg\TcgApplication.class
+com\example\tcg\config\SwaggerConfig.class
+com\example\tcg\model\Producto.class
+com\example\tcg\service\ProductoService.class
+com\example\tcg\config\CorsConfig$1.class
